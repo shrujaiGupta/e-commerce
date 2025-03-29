@@ -45,3 +45,5 @@ orangeAtcBtn.addEventListener('click', ()=>{
     `
     cartTotal.className="text-green-600"
 })
+
+// this is a random comment added to learn git!
