@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Cart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-100">
+    <div class="bg-white p-6 rounded-lg shadow-md w-full max-w-3xl text-center">
+        <h1 class="text-xl font-semibold mb-4">Fruit Cart</h1>
+        <div class="grid grid-cols-3 gap-4">
+            <div class="p-4 border rounded-lg shadow-sm">
+                <img src="./images/banana.jpg" alt="Banana" class="w-full h-32 object-cover rounded">
+                <p id="banana-price" class="mt-2 text-gray-700 font-semibold hover:text-red-500 transition">Rs. 60/- dozen</p>
+                <button id="banana-atc-btn" class="mt-2 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition">Add to Cart</button>
+            </div>
+            <div class="p-4 border rounded-lg shadow-sm">
+                <img src="./images/apple.jpg" alt="Apple" class="w-full h-32 object-cover rounded">
+                <p id="apple-price" class="mt-2 text-gray-700 font-semibold hover:text-red-500 transition">Rs. 150/- kg</p>
+                <button id="apple-atc-btn" class="mt-2 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition">Add to Cart</button>
+            </div>
+            <div class="p-4 border rounded-lg shadow-sm">
+                <img src="./images/orange.jpg" alt="Orange" class="w-full h-32 object-cover rounded">
+                <p id="orange-price" class="mt-2 text-gray-700 font-semibold hover:text-red-500 transition">Rs. 100/- kg</p>
+                <button id="orange-atc-btn" class="mt-2 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition">Add to Cart</button>
+            </div>
+        </div>
+        <div class="mt-6 p-4 border-t border-gray-300">
+            <h2 id="cart-value" class="text-lg font-semibold">Total Cart Value: <span id="cart-total" class="text-green-600">Rs. 0/-</span></h2>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
